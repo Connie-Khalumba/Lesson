@@ -133,6 +133,11 @@ header button:hover {
   margin: 10px;
 }
 
+.card img {
+    width: 100%;
+    height: auto;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -164,12 +169,18 @@ header button:hover {
   }
 
   .cards-section {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .card {
-    width: 80%;
-    margin-bottom: 20px;
+   background-color: #073961;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px 0;
+    width: 30%;
+    color: white;
+    box-shadow: 0 2px 4px rgba(173, 228, 245, 0.904);
   }
 }
